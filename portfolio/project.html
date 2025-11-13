@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project · Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="project">
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Portfolio</a>
+      <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button>
+      <ul class="nav-links">
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <a class="back" href="projects.html">← Back to Projects</a>
+    <article id="project-detail" class="project-detail">
+      <!-- Populated from assets/data/projects.json using id query param -->
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

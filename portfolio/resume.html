@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume · Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="resume">
+  <header class="site-header">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <nav class="nav container">
+      <a class="logo" href="index.html">Bhavik</a>
+      <button id="navToggle" class="btn btn-ghost nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1>Resume</h1>
+
+    <div class="resume-actions">
+      <a class="btn" href="assets/Resume.pdf" target="_blank" rel="noopener">View PDF</a>
+      <a class="btn btn-outline" href="assets/Resume.pdf" download>Download PDF</a>
+    </div>
+
+    <!-- Inline PDF viewer with fallback -->
+    <div class="pdf-embed" style="margin:16px 0;">
+      <object data="assets/Resume.pdf" type="application/pdf" width="100%" height="800">
+        <iframe src="assets/Resume.pdf" width="100%" height="800" style="border:0;">
+          <p>Your browser can’t display PDFs. <a href="assets/Resume.pdf" target="_blank" rel="noopener">Open the PDF</a>.</p>
+        </iframe>
+      </object>
+    </div>
+
+    <section class="resume">
+      <h2>Bhavik</h2>
+      <p class="muted"><a href="mailto:bhavik92204@gmail.com">bhavik92204@gmail.com</a> · <a href="https://github.com/bhavik92204" target="_blank" rel="noopener">github.com/bhavik92204</a> · <a href="https://www.linkedin.com/in/bhavik92204" target="_blank" rel="noopener">linkedin.com/in/bhavik92204</a></p>
+
+      <h3>Education</h3>
+      <ul class="list">
+        <li><strong>BS in Computer Science</strong> — Your University (YYYY–YYYY)
+          <br />Relevant Coursework: Data Structures, Algorithms, Databases, Operating Systems, Computer Networks, Machine Learning</li>
+      </ul>
+
+      <h3>Projects</h3>
+      <ul class="list">
+        <li><strong>Issue Tracker</strong> — Full‑stack bug tracker with auth and labels. <a href="projects.html">Details</a></li>
+        <li><strong>Data Pipeline + Dashboard</strong> — ETL of public dataset to Postgres with Streamlit dashboard.</li>
+        <li><strong>Serverless URL Shortener</strong> — AWS Lambda + DynamoDB with analytics.</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <p>Python, JavaScript/TypeScript, React, FastAPI/Express, PostgreSQL, Redis, Docker, AWS (Lambda, API Gateway, DynamoDB), Git, CI/CD, Testing.</p>
+
+      <h3>Experience (if any)</h3>
+      <ul class="list">
+        <li><strong>Teaching Assistant</strong> — CS Dept (YYYY–YYYY): Led labs for Data Structures; graded assignments; mentored students.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
