@@ -26,10 +26,10 @@
 
   <main class="container section">
     <h1>Contact</h1>
-    <p>Send me an email at <a href="mailto:bhavik92204@gmail.com">bhavik92204@gmail.com</a> or use the form below.</p>
+    <p>Send me an email at <span class="email-obfuscated" data-user="bhavik92204" data-domain="gmail.com"><noscript>bhavik92204 [at] gmail [dot] com</noscript></span> or use the form below.</p>
 
     <!-- If you create a Formspree form, set data-formspree to your endpoint like: https://formspree.io/f/abcd1234 -->
-    <form id="contactForm" class="card" action="#" method="POST" data-formspree="">
+    <form id="contactForm" class="card" action="#" method="POST" data-formspree="https://formspree.io/f/xpqjawzg">
       <label>
         Name
         <input type="text" name="name" placeholder="Your name" required />
@@ -43,7 +43,9 @@
         <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
       </label>
       <button class="btn" type="submit">Send</button>
-      <p class="muted" style="margin:0">No JS fallback: please email me at <a href="mailto:bhavik92204@gmail.com">bhavik92204@gmail.com</a></p>
+      <noscript>
+        <p class="muted" style="margin:0">JavaScript is disabled. Please email me at: bhavik92204 [at] gmail [dot] com</p>
+      </noscript>
     </form>
   </main>
 
